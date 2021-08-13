@@ -11,31 +11,24 @@ SimKaon_attrs = ['pdgID','trkID','px','py','pz','e','mass','ndau','vx','vy','vz'
 SimKaon_dau_attrs = ['pdgID','z','px','py','pz','e','mompdgID','mome','electrone']
 SimLambda_attrs = ['pdgID','px','py','pz','e','mass','ndau','vx','vy','vz','decay','electrone']
 SimLambda_dau_attrs = ['pdgID','z','px','py','pz','e','mompdgID','mome','electrone','momdecay']
-SimParticle_attrs = ['decay', 'pdgID', 'trkID', 'ndau', 'mass', 'e', 'vx', 'vy', 'vz', 'px', 'py', 'pz', 'endx', 'endy', 'endz']
-SimParticle_dau_attrs = ['pdgID','z','px','py','pz','e','mompdgID','mome','momdecay']
-SimPNParticle_attrs = ['pdgID','px','py','pz','e','mass','vx','vy','vz','electrone']
-SimPNParticle_dau_attrs = ['pdgID','z','px','py','pz','e','mompdgID','mome','momdecay','electrone']
+SimParticle_attrs = ['pdgID','trkID','px','py','pz','e','mass','ndau','vx','vy','vz','decay']
+SimParticle_dau_attrs = ['pdgID','z','px','py','pz','e','mompdgID','mome','momdecay', 'electrone']
 
 branches = {
     #"Proc": ['id'],
     "n": ['Sim_Particle'], #,'Sim_Lambda'],
-    #"n": ['Sim_PNParticle'],
-   # "Sim_PNParticle": SimPNParticle_attrs,
-    #"Sim_PNParticle_dau1": SimPNParticle_dau_attrs,
-    #"Sim_PNParticle_dau2": SimPNParticle_dau_attrs,
     "Sim_Particle": SimParticle_attrs,
     "Sim_Particle_dau1": SimParticle_dau_attrs,
     "Sim_Particle_dau2": SimParticle_dau_attrs,
-    "Sim_Particle_dau3": SimParticle_dau_attrs,
     #"Sim_Lambda": SimLambda_attrs,
     #"Sim_Lambda_dau1": SimLambda_dau_attrs,
     #"Sim_Lambda_dau2": SimLambda_dau_attrs,
-   # "Sim_Kaon": SimKaon_attrs,
+    #"Sim_Kaon": SimKaon_attrs,
     #"Sim_Kaon_dau1": SimKaon_dau_attrs,
     #"Sim_Kaon_dau2": SimKaon_dau_attrs,
     #"Target_Electron": TargetElectron_attrs,
     #"Target_Photon": Target_attrs,
-   # "Target_Kaon": TargetKaon_attrs,
+    #"Target_Kaon": TargetKaon_attrs,
     #"TSP_Kaon_dau1": TSPKaondau_attrs,
     #"TSP_Kaon_dau2": TSPKaondau_attrs,
     #"TSP_Kaon_dau3": TSPKaondau_attrs,
